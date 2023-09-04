@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+  <title>Input form</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Application Form</h2>
+    <form action="/input" method="post" id="form">
+        <label for="Gender">Gender:</label>
+        <select id="Gender" name="Gender">
+            <option value="">---select---</option>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
+
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age" step="0.01">
+
+        <label for="CGPA">CGPA:</label>
+        <input type="number" id="CGPA" name="CGPA" step="0.01">
+        
+        <label for="Internships">Internships:</label>
+        <input type="number" id="Internships" name="Internships" step="0.01">
+
+        <label for="HistoryOfBacklogs">HistoryOfBacklogs:</label>
+        <input type="number" id="HistoryOfBacklogs" name="HistoryOfBacklogs" step="0.01">
+
+        <label for="Stream">Stream:</label>
+        <select id="Stream" name="Stream">
+            <option value="">---select---</option>
+            <option value="0">Civil</option>
+            <option value="1">Computer Science</option>
+            <option value="2">Electrical </option>
+            <option value="3">Electronics And Communication</option>
+            <option value="4">Information Technology </option>
+            <option value="5">Mechanical </option>
+        </select>
+        <label for="Hostel">Hostel:</label>
+        <select id="Hostel" name="Hostel">
+            <option value="">---select---</option>
+            <option value="0">Hostel</option>
+            <option value="1">Hostel</option>
+            
+
+        <button type="submit">Submit</button>
+    </form>
+
+  <h2>Output : {{Output}}</h2>
+</div>
+</body>
+</html>
